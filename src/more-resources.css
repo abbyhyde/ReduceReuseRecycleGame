@@ -10,6 +10,11 @@ body {
     font-size: 30px;
     font-family: Georgia;
     text-shadow: 2px 2px rgb(136, 136, 136);
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
 }
 
 
@@ -22,7 +27,7 @@ nav {
     padding-top: 25px;
 }
 
-ul {
+.list {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -127,10 +132,11 @@ div.container {
     height: 35px;
     color: white;
     text-align: center;
-    padding-top: 10px;
+    <<<<<<< HEAD padding-top: 10px;
     padding-bottom: 5px;
     font-family: cursive;
-    font-size: 18px;
+    =======padding-top: 15px;
+    >>>>>>>85e09496a35077b5c50dbc7282cad4b513a171a1 font-size: 18px;
 }
 
 a {
