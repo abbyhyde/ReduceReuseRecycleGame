@@ -1,0 +1,55 @@
+body {
+    height: auto;
+}
+
+.header {
+    width: auto;
+    margin: 0 auto;
+    border-radius: 20px;
+    padding: .1px;
+    font-size: 30px;
+    font-family: Georgia;
+    text-shadow: 3px 3px black;
+}
+
+
+/* navbar */
+
+.list {
+    list-style-type: none;
+    overflow: hidden;
+    font-family: cursive;
+    background-color: #6ab66a;
+    border-radius: 20px;
+    color: black;
+    text-align: center;
+    font-size: 25px;
+    padding: 8px;
+    width: 100%;
+    transition: 0.5s;
+    cursor: pointer;
+    margin: 0;
+}
+
+
+/* center navbar*/
+
+.item {
+    display: inline-block;
+    list-style-type: none;
+}
+
+div.homeContainer {
+    border-radius: 25px;
+    margin: 40px;
+    background-color: burlywood;
+    border: 5px solid black;
+}
+
+.text {
+    margin-left: 40px;
+    font-family: Georgia;
+    font-size: 18px;
+    color: black;
+    width: 45%;
+}
