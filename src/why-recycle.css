@@ -60,7 +60,7 @@ nav {
 
 /*middle sliding rect*/
 
-li::before {
+.item::before {
     content: "";
     position: absolute;
     height: 60%;
@@ -74,7 +74,7 @@ li::before {
 
 /*bottom sliding rect*/
 
-li::after {
+.item::after {
     content: "";
     position: absolute;
     height: 40%;
@@ -102,9 +102,9 @@ a::before {
     border-radius: 10px;
 }
 
-li:hover:before,
-li:hover::after,
-li:hover a::before {
+.item:hover:before,
+.item:hover::after,
+.item:hover a::before {
     width: 100%;
 }
 
