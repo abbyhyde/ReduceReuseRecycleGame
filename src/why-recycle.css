@@ -3,17 +3,18 @@ body {
 }
 
 .header {
-    width: auto;
-    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
     border-radius: 20px;
-    padding: .1px;
     font-size: 30px;
     font-family: Georgia;
     text-shadow: 2px 2px rgb(136, 136, 136);
-    text-align: center;
 }
 
-h3 {
+.subheader {
     text-align: center;
 }
 
