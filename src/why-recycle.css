@@ -124,6 +124,15 @@ div.container {
     width: 45%;
 }
 
+.landfill {
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+    margin: 0 auto;
+    left: 50%;
+    top-padding: 300px;
+}
+
 .footer {
     border-radius: 20px;
     background-color: #6fbe64;

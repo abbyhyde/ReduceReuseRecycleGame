@@ -114,6 +114,7 @@ div.container {
     margin: 40px;
     background-color: rgb(228, 245, 255);
     border: 5px solid black;
+	height: 600px;
 }
 
 .text {
