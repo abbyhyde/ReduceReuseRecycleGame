@@ -15,55 +15,102 @@ body {
 
 /* navbar */
 
-.list {
-    list-style-type: none;
-    overflow: hidden;
-    font-family: cursive;
-    background-color: #65b365;
-    border-radius: 20px;
-    color: black;
-    text-align: center;
-    font-size: 25px;
-    padding: 8px;
-    width: 100%;
-    transition: 0.5s;
-    cursor: pointer;
-    margin: 0;
+nav {
+    width: auto;
+    background-color: rgb(255, 146, 131);
+    border-radius: 15px;
+    padding-top: 25px;
 }
 
-
-/* center navbar*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
 
 .item {
-    display: inline-block;
-    list-style-type: none;
+    position: relative;
+    padding: 0 50px;
+    height: 100%;
+    display: flex;
 }
 
-li a .dropbtn {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
+
+/*Nav bar text*/
+
+.navbar {
+    z-index: 1;
+    color: rgb(0, 0, 0);
     text-decoration: none;
+    font-family: cursive;
+    font-weight: 500;
+    font-size: 25px;
+    padding-bottom: 20px
 }
 
-li a:hover .dropdown:hover .dropbtn {
-    background-color: #82d482;
+
+/*middle sliding rect*/
+
+.item::before {
+    content: "";
+    position: absolute;
+    height: 60%;
+    width: 0;
+    background-color: #ffffff;
+    right: 0;
+    z-index: 0;
+    transition: all 0.5s;
 }
 
-li.dropdown {
-    display: inline-block;
-    list-style-type: none;
+
+/*bottom sliding rect*/
+
+.item::after {
+    content: "";
+    position: absolute;
+    height: 40%;
+    width: 0;
+    background-color: #ffffff;
+    left: 0;
+    z-index: 0;
+    bottom: 20%;
+    transition: all 0.5s;
+    border-radius: 10px;
+}
+
+
+/*top sliding rect*/
+
+a::before {
+    position: absolute;
+    content: "";
+    height: 40%;
+    width: 0;
+    background-color: #ffffff;
+    bottom: 85%;
+    left: 0;
+    transition: all 0.5s;
+    border-radius: 10px;
+}
+
+.item:hover:before,
+.item:hover::after,
+.item:hover a::before {
+    width: 100%;
 }
 
 div.container {
     border-radius: 25px;
     margin: 40px;
-    background-color: burlywood;
+    background-color: rgb(228, 245, 255);
     border: 5px solid black;
 }
 
-ul {
+.text {
     margin-left: 40px;
     font-family: Georgia;
     font-size: 18px;
@@ -73,14 +120,15 @@ ul {
 
 .footer {
     border-radius: 20px;
-    background-color: #65b365;
+    background-color: #6fbe64;
     position: relative;
     left: 0;
     width: 100%;
     height: 35px;
     color: white;
     text-align: center;
-    padding-top: 15px;
+    padding-top: 10px;
+    padding-bottom: 5px;
     font-family: cursive;
     font-size: 18px;
 }
